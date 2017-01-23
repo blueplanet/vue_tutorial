@@ -50,6 +50,8 @@ var classVm = new Vue({
   data: {
     isActive: true,
     hasError: false,
+    activeClass: 'active',
+    errorClass: 'text-danger',
     classObject: {
       active: true,
       'text-danger': false
