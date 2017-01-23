@@ -48,6 +48,7 @@ var wvm = new Vue({
 var classVm = new Vue({
   el: '#class-example',
   data: {
-    isActive: true
+    isActive: true,
+    hasError: false
   }
 })
