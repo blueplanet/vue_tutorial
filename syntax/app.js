@@ -54,5 +54,13 @@ var classVm = new Vue({
       active: true,
       'text-danger': false
     }
+  },
+  computed: {
+    computedAttr: function() {
+      return {
+        active: this.isActive,
+        'text-danger': this.hasError
+      }
+    }
   }
 })
