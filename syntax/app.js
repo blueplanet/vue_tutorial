@@ -66,3 +66,10 @@ var classVm = new Vue({
     }
   }
 })
+
+var ifCond = new Vue({
+  el: '#if-cond',
+  data: {
+    showH1: true
+  }
+})

@@ -26,6 +26,10 @@
       <div v-bind:class="[isActive ? activeClass : '', errorClass]">bind array</div>
     </div>
 
+    <div id="if-cond">
+      <h1 v-if='showH1'>H1 if</h1>
+      <h1 v-else>H1 else</h1>
+    </div>
 
     <script src="app.js"></script>
   </body>
