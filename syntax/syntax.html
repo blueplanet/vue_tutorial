@@ -29,6 +29,11 @@
     <div id="if-cond">
       <h1 v-if='showH1'>H1 if</h1>
       <h1 v-else>H1 else</h1>
+      <template v-if='showH1'>
+        <h1>H1 if for template</h1>
+        <h2>h2 in template</h2>
+        <h3>h3 in template</h3>
+      </template>
     </div>
 
     <script src="app.js"></script>
