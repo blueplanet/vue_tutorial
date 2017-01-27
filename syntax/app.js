@@ -73,3 +73,32 @@ var ifCond = new Vue({
     showH1: true
   }
 })
+
+
+Vue.component('todo-item', {
+  template: '\
+    <li>\
+      {{ title }}\
+      <button v-on:click="$emit(\'remove\')">X</button>\
+    </li>\
+  ',
+  props: ['title']
+})
+
+new Vue({
+  el: '#todo-list',
+  data: {
+    newTodo: '',
+    todos: [
+      'task1',
+      'task2',
+      'task3'
+    ]
+  },
+  methods: {
+    addNewTodo: function() {
+      this.todos.push(this.newTodo)
+      this.newTodo = ''
+    }
+  }
+})
