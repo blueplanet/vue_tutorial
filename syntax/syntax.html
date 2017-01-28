@@ -43,6 +43,13 @@
       </ul>
     </div>
 
+    <div id="textarea">
+      <span>Multiline message is :</span>
+      <p style='white-space: pre'>{{ message }}</p>
+      <br>
+      <textarea v-model='message' placeholder='add text'></textarea>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

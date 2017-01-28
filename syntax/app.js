@@ -102,3 +102,10 @@ new Vue({
     }
   }
 })
+
+new Vue({
+  el: '#textarea',
+  data: {
+    message: ''
+  }
+})
