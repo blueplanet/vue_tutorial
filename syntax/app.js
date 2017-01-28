@@ -109,3 +109,10 @@ new Vue({
     message: ''
   }
 })
+
+new Vue({
+  el: '#checkbox',
+  data: {
+    checkedNames: []
+  }
+})
