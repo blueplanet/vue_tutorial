@@ -1,5 +1,5 @@
-Vue.compment('button-counter', {
-  template: '<button v-on:click="increment">{{ count }}</button>',
+Vue.component('button-counter', {
+  template: '<button v-on:click="increment">{{ counter }}</button>',
   data: function() {
     return {
       counter: 0
@@ -20,7 +20,7 @@ new Vue({
   },
   methods: {
     incrementTotal: function() {
-      this.total += 11
+      this.total += 1
     }
   }
 })
