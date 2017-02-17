@@ -10,7 +10,12 @@ var myMixin = {
 }
 
 var Component = Vue.extend({
-  mixins: [myMixin]
+  mixins: [myMixin],
+  methods: {
+    hello: function() {
+      console.log('overwrite with component...........')
+    }
+  }
 })
 
 var component = new Component({
