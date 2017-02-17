@@ -13,4 +13,8 @@ var Component = Vue.extend({
   mixins: [myMixin]
 })
 
-var component = new Component()
+var component = new Component({
+  created: function() {
+    console.log('from component !!!!!!!!!!!!!!!!')
+  }
+})
