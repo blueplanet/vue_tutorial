@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170223215756) do
     t.integer  "question_id"
     t.string   "caption"
     t.string   "value"
+    t.integer  "display_no"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["question_id"], name: "index_choices_on_question_id"

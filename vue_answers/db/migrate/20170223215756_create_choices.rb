@@ -4,6 +4,7 @@ class CreateChoices < ActiveRecord::Migration[5.0]
       t.belongs_to :question
       t.string :caption
       t.string :value
+      t.integer :display_no
 
       t.timestamps
     end
