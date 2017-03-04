@@ -7,6 +7,7 @@ import Vue from 'vue'
 
 var questionBuilder = new Vue({
   el: '#question-builder',
+  props: 'questions',
   data: {
     questions: []
   },
