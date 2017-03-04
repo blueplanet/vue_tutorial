@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   resources :surveys
 
-  root to: 'home#index'
+  root to: 'surveys#index'
 end

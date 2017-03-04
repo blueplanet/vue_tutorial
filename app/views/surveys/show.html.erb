@@ -13,6 +13,7 @@
 <%= link_to 'Edit', edit_survey_path(@survey) %> |
 <%= link_to 'Back', surveys_path %>
 
-<div id="question-builder">
-  <h1>{{ title }}</h1>
+<div id="question-builder" data-questions="<%= @survey.questions.to_json %>">
 </div>
+
+<%= javascript_pack_tag 'surveys_show' %>
